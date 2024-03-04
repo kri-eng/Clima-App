@@ -1,54 +1,43 @@
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Clima
 
-#  Clima
+## Introduction
 
-## Our Goal
+Clima is a versatile iOS weather application designed to provide users with accurate weather forecasts and information. With its intuitive interface and robust functionality, Clima offers users an enhanced experience of staying informed about current and future weather conditions.
 
-It’s time to take our app development skills to the next level. We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
+## Screenshot
 
+<img src="https://github.com/kri-eng/Clima-App/assets/124129235/bea0bb60-a823-420f-a118-e41127482c90" alt="Xylophone-Screenshot" width=300>
 
-## What you will create
+<img src="https://github.com/kri-eng/Clima-App/assets/124129235/c9e6ddd6-172a-4996-86d9-36da8fe9fbeb" alt="Xylophone-Screenshot" width=300>
 
-By the end of the module, you will have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
+## User Interface
 
-## What you will learn
+The user interface of Clima includes:
 
-* How to create a dark-mode enabled app.
-* How to use vector images as image assets.
-* Learn to use the UITextField to get user input. 
-* Learn about the delegate pattern.
-* Swift protocols and extensions. 
-* Swift guard keyword. 
-* Swift computed properties.
-* Swift closures and completion handlers.
-* Learn to use URLSession to network and make HTTP requests.
-* Parse JSON with the native Encodable and Decodable protocols. 
-* Learn to use Grand Central Dispatch to fetch the main thread.
-* Learn to use Core Location to get the current location from the phone GPS. 
+- **Custom Navigation Bar:** Featuring essential elements such as a current coordinate button, a search bar, and a search button.
+- **Weather Display:** Including system images representing the current weather, temperature indication, and city label.
 
-### Condition Codes
-```
-switch conditionID {
-        case 200...232:
-            return "cloud.bolt"
-        case 300...321:
-            return "cloud.drizzle"
-        case 500...531:
-            return "cloud.rain"
-        case 600...622:
-            return "cloud.snow"
-        case 701...781:
-            return "cloud.fog"
-        case 800:
-            return "sun.max"
-        case 801...804:
-            return "cloud.bolt"
-        default:
-            return "cloud"
-        }
-```
+## Functionality
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+Clima offers the following functionalities:
 
-![End Banner](Documentation/readme-end-banner.png)
+- **Location-Based Weather:** Users receive the current weather for their location upon launching the application.
+- **City Search:** Users can search for weather in other cities using the search bar, initiating data fetching from the OpenWeather API.
+- **Data Fetching and Parsing:** The application utilizes URLSession and data tasks to fetch weather data, JSON parsing it to retrieve temperature and city information.
+- **Dynamic Image Allocation:** Clima allocates weather-specific images based on weather ID fetched from the API.
+- **CoreLocation Integration:** Clima utilizes CoreLocation to access the user's current location and fetch weather data accordingly.
+
+## Learnings
+
+- Dark mode implementation
+- Vector images usage
+- UITextField for user input
+- Delegate pattern
+- Swift protocols and extensions
+- Swift guard keyword
+- Swift computed properties
+- URLSession for networking
+- JSON parsing with Encodable and Decodable protocols
+- Grand Central Dispatch for main thread handling
+- Core Location integration for GPS-based location retrieval
